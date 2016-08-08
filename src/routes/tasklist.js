@@ -1,3 +1,7 @@
+"use strict";
+
+// Load DocumentDBClient and async modules
+//  Also defines the TaskList function which references ../models/taskDao.js
 var DocumentDBClient = require('documentdb').DocumentClient;
 var async = require('async');
 
@@ -5,6 +9,9 @@ function TaskList(taskDao) {
   this.taskDao = taskDao;
 }
 
+
+// Define the tasks:
+//   showTasks, addTasks, completeTasks
 TaskList.prototype = {
   showTasks: function(req, res) {
     var self = this;

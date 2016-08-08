@@ -1,6 +1,12 @@
+"use strict";
+
+// Import documentDB and docdbUtils modules
 var DocumentDBClient = require('documentdb').DocumentClient;
 var docdbUtils = require('./docdbUtils');
 
+
+// Define and Import the TaskDao Task Object
+//  Initializing our Task object and setting up the Database and Document Collection we will use.
 function TaskDao(documentDBClient, databaseId, collectionId) {
   this.client = documentDBClient;
   this.databaseId = databaseId;
@@ -10,6 +16,9 @@ function TaskDao(documentDBClient, databaseId, collectionId) {
   this.collection = null;
 }
 
+
+// TaskDao methods
+//  Interactions with data stored in DocumentDB
 TaskDao.prototype = {
   init: function(callback) {
     var self = this;
