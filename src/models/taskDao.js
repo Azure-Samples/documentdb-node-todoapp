@@ -23,9 +23,12 @@ TaskDao.prototype = {
       docdbUtils.getOrCreateCollection(self.client, self.database._self, self.collectionId, function(err, coll) {
         if (err) {
           callback(err);
+          return;
         }
 
         self.collection = coll;
+        callback();
+
       });
     });
   },
