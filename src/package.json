@@ -10,7 +10,6 @@
     "name": "",
     "email": ""
   },
-
   "dependencies": {
     "async": "^2.1.2",
     "body-parser": "~1.15.2",
