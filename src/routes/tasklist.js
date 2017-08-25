@@ -23,7 +23,7 @@ TaskList.prototype = {
       }
 
       res.render('index', {
-        title: 'My ToDo List ',
+        title: 'My ToDo List 1',
         tasks: items
       });
     });

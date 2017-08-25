@@ -1,7 +1,7 @@
 var config = {}
 
-config.host = process.env.HOST || "[URI for DocumentDB endpoint]";
-config.authKey = process.env.AUTH_KEY || "[Master key for DocumentDB]";
+config.host = process.env.HOST || "https://nodetodo-sh.documents.azure.com:443/";
+config.authKey = process.env.AUTH_KEY || "znQFFGe3bBRrUywRvhHtVmaJpfV0TqLkeN8HR0YnLoXCzXQVIzFqKSUg7BHN1zoHxwIMZDxOmlX0ETBqtxKbeA==";
 config.databaseId = "ToDoList";
 config.collectionId = "Items";
 
